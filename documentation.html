@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="./documentationStyle.css">
+</head>
+
+<body>
+    <div class="documentation-div">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="header-nav-list">
+                    <li class="list-item-inline"><a class="link" href="#">About</a></li>
+                    <li class="list-item-inline"><a class="link" href="#">Contact</a></li>
+                    <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="nav">
+            <ul class="component-nav-list">
+                <li class="list-item"><a class="link" href="#avatar">Avatar</a></li>
+                <li class="list-item"><a class="link" href="#alert">Alert</a></li>
+                <li class="list-item"><a class="link" href="#badge">Badge</a></li>
+                <li class="list-item"><a class="link" href="#button">Button</a></li>
+                <li class="list-item"><a class="link" href="#card">Card</a></li>
+                <li class="list-item"><a class="link" href="#">Image</a></li>
+                <li class="list-item"><a class="link" href="#">Input</a></li>
+                <li class="list-item"><a class="link" href="#">Lists</a></li>
+                <li class="list-item"><a class="link" href="#">Navigation</a></li>
+                <li class="list-item"><a class="link" href="#">Rating</a></li>
+                <li class="list-item"><a class="link" href="#">Slider</a></li>
+                <li class="list-item"><a class="link" href="#">Simplified Grid</a></li>
+                <li class="list-item"><a class="link" href="#">Text Utilities</a></li>
+                <li class="list-item"><a class="link" href="#">Toast/Notify/Snackbar</a></li>
+            </ul>
+        </nav>
+        <aside class="aside">
+            <div class="row" id="avatar">
+                <h1>Avatar</h1>
+                <h2>Avatar Descrption</h2>
+                <h2>Rounded Avatars</h2>
+                <div class="avatar-div">
+                    <div class="tooltip">
+                        <span class="tooltiptext">"avatar medium"</span>
+                        <img class="avatar medium" src="./images/avatar.svg">
+                    </div>
+                    <div class="tooltip">
+                        <span class="tooltiptext">"avatar large"</span>
+                        <img class="avatar large" src="./images/avatar.svg">
+                    </div>
+                    <div class="tooltip">
+                        <span class="tooltiptext">"avatar Xtralarge"</span>
+                        <img class="avatar Xtralarge" src="./images/avatar.svg">
+                    </div>
+                </div>
+                <h2>Square Avatars</h2>
+                <div class="avatar-div">
+                    <div class="tooltip">
+                        <span class="tooltiptext">"avatar-square medium"</span>
+                        <img class="avatar-square medium" src="./images/background.jpg">
+                    </div>
+                    <div class="tooltip">
+                        <span class="tooltiptext">"avatar-square large"</span>
+                        <img class="avatar-square large" src="./images/background.jpg">
+                    </div>
+                    <div class="tooltip">
+                        <span class="tooltiptext">"avatar-square Xtralarge"</span>
+                        <img class="avatar-square Xtralarge" src="./images/background.jpg">
+                    </div>
+                </div>
+                <!-- <div>
+                    <pre><code class="code xml"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value class">"<b title="Required Class">avatar medium</b>"<span class="attribute">src</span>=<span class="value class">"<b title="Required Class">./images/avatar.svg</b>"</code></pre>
+                </div> -->
+            </div>
+            <div class="row" id="alert">
+                <h1>Alert</h1>
+                <h2>Alert Description</h2>
+                <div class="content-div">
+                    <div class="alert primary-alert">
+                        Hey You have a Primary Alert Check it Out!!
+                    </div>
+                    <div class="alert secondary-alert">
+                        Hey You have a Secondary Alert Check it Out!!
+                    </div>
+                    <div class="alert success-alert">
+                        Hey You have a Success Alert Check it Out!!
+                    </div>
+                    <div class="alert danger-alert">
+                        Hey You have a Danger Alert Check it Out!!
+                    </div>
+                    <div class="alert warning-alert">
+                        Hey You have a Warning Alert Check it Out!!
+                    </div>
+                    <div class="alert info-alert">
+                        Hey You have a Info Alert Check it Out!!
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="badge">
+                <h1>Badge</h1>
+                <h2>Badge Description</h2>
+                <div class="content-div">
+                    <button class="button badge-button">Messages<span class="badge">4</span></button>
+                    <button class="button badge-button">Notifications<span class="badge">10</span></button>
+                </div>
+            </div>
+            <div class="row" id="button">
+                <h1>Button</h1>
+                <h2>Button Description</h2>
+                <div class="content-div">
+                    <button class="button primary-button">Primary</button>
+                    <button class="button secondary-button">Secondary</button>
+                    <button class="button success-button">Success</button>
+                    <button class="button danger-button">Danger</button>
+                    <button class="button warning-button">Warning</button>
+                    <button class="button info-button">Info</button>
+                </div>
+            </div>
+            <div class="row" id="card">
+                <h1>Card</h1>
+                <h2>Card Description</h2>
+                <div class="profile-card-div">
+                    <div class="card-name-div">
+                        <p class="para"><strong>Shashank Korthiwada</strong></p>
+                        <img class="profile-image" src="./images/avatar.svg">
+                        <p style="margin: -3.5rem 8rem;
+                        width: 200rem;">Software Development Engineer</p>
+                    </div>
+                    <div class="card-description-div">
+                        <p style="line-height: 1.6;">This is a sample description explaining about the individual and
+                            his skills and
+                            hobbies and his
+                            experience....</p>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+
+                <div class="product-card-div">
+                    <div class="product-image-div">
+                        <!-- style="width: 100%; display: block;" -->
+                        <img class="item-image"
+                            src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/12/2/0bf4c343-e45a-48b7-91fa-1c8dbfdd8d471575276332064-1.jpg"
+                            class="img-responsive">
+                        <span class="new-tag">New</span>
+                    </div>
+                    <div class="product-description-div">
+                        <h1>English Navy</h1>
+                        <p>Men Slim Fit Formal Shirt</p>
+                        <div><b>Rs.479</b><span
+                                style="text-decoration: line-through; padding: 0.5rem;">Rs.999</span><span
+                                style="color: orange;">(52% OFF)</span></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
