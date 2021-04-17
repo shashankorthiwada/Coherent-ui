@@ -5,17 +5,515 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coherent UI</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
-    <div class="main-div">
-        <div class="container">
-            <button>V0.0</button>
-            <h1>Coherent UI</h1>
-            <a class="documentation-anchor" href="./documentation.html">Get Started</a>
-        </div>
-    </div>
+    <section class="container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <span> <a class="nav-link" href="#"><i class="fab fa-cuttlefish"></i></a>
+                </span>
+                <span class="title">
+                    <a class="nav-link" href="#">
+                        <h1>Coherent UI</h1>
+                    </a>
+                </span>
+            </div>
+            <aside class="sidebar-content">
+                <nav>
+                    <ul class="component-nav-list">
+                        <li class="list-item" style="font-size: 1.6rem;"><a class="nav-link" href="#start">
+                                Getting Started
+                            </a></li>
+                        <div>
+                            <h2>Theming </h2>
+                        </div>
+
+                        <li class="list-item"><a class="nav-link" href="#colors">Colors</a></li>
+                        <li class="list-item"><a class="nav-link" href="#typography">Typography</a></li>
+                        <div>
+                            <h3>Components</h3>
+                        </div>
+
+                        <li class="list-item"><a class="nav-link" href="#avatar">Avatar</a></li>
+                        <li class="list-item"><a class="nav-link" href="#alert">Alert</a></li>
+                        <li class="list-item"><a class="nav-link" href="#badge">Badge</a></li>
+                        <li class="list-item"><a class="nav-link" href="#button">Button</a></li>
+                        <li class="list-item"><a class="nav-link" href="#card">Card</a></li>
+                        <li class="list-item"><a class="nav-link" href="#image">Image</a></li>
+                        <li class="list-item"><a class="nav-link" href="#input">Input</a></li>
+                        <li class="list-item"><a class="nav-link" href="#list">Lists</a></li>
+                        <li class="list-item"><a class="nav-link" href="#navigation">Navigation</a></li>
+                        <li class="list-item"><a class="nav-link" href="#modal">Modal</a></li>
+                        <li class="list-item"><a class="nav-link" href="#rating">Rating</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </nav>
+        <main class="content">
+            <section class="row intro-section" id="start">
+                <div class="intro-div">
+                    <div class="m-1rem">
+                        <h2>Simple UI modules With Logical and Consistent behavior</h2>
+                    </div>
+                    <p class="m-2rem">
+                    <h4>Import this Stylesheet to your project and Start building</h4>
+                    </p>
+                    <div class="ui-div m-1rem">
+                        &lt;link rel='stylesheet' type='text/css' href='https://coherentui.netlify.app/' /&gt;
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="colors">
+                <h1>Colors Used</h1>
+                <div class="content-div-flex width-fit m-1rem">
+                    <div class="color-block primary-color"></div>
+                    <div class="color-block secondary-color"></div>
+                    <div class="color-block success-color"></div>
+                    <div class="color-block danger-color"></div>
+                    <div class="color-block warning-color"></div>
+                    <div class="color-block info-color"></div>
+                </div>
+            </section>
+
+            <section class="row" id="typography">
+                <h1>Typography</h1>
+                <div class="content-div width-fit m-1rem">
+                    <h1>This is Heading h1</h1>
+                    <br>
+                    <h2>This is Heading h2</h2>
+                    <br>
+                    <h3>This is Heading h3</h3>
+                    <br>
+                    <h4>This is Heading h4</h4>
+                    <br>
+                    <h5>This is Heading h5</h5>
+                    <br>
+                    <h6>This is Heading h6</h6>
+                    <br>
+                </div>
+            </section>
+
+            <section class="row" id="avatar">
+                <h1>Avatar</h1>
+                <div class="content-div width-fit m-1rem">
+                    <h2>Rounded Avatars</h2>
+                    <div class="avatar-div">
+                        <img class="avatar medium" src="./images/avatar.svg" />
+                    </div>
+                    <div class="avatar-div">
+                        <img class="avatar large" src="./images/avatar.svg" />
+                    </div>
+                    <div class="avatar-div">
+                        <img class="avatar Xtralarge" src="./images/avatar.svg" />
+                    </div>
+                    <h2>Square Avatars</h2>
+                    <div class="avatar-div">
+                        <img class="avatar-square medium" src="./images/background.jpg" />
+                    </div>
+                    <div class="avatar-div">
+                        <img class="avatar-square large" src="./images/background.jpg" />
+                    </div>
+                    <div class="avatar-div">
+                        <img class="avatar-square Xtralarge" src="./images/background.jpg" />
+                    </div>
+
+                    <div class="code-container width-fit p-1rem">
+
+                        &lt;img class="avatar medium" src="./images/avatar.svg"/&gt;
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="alert">
+                <h1>Alerts</h1>
+                <div class="content-div width-fit m-1rem">
+                    <div class="alert primary-alert">
+                        Hey You have a Primary Alert Check it Out!!
+                    </div>
+                    <div class="alert secondary-alert">
+                        Hey You have a Secondary Alert Check it Out!!
+                    </div>
+                    <div class="alert success-alert">
+                        Hey You have a Success Alert Check it Out!!
+                    </div>
+                    <div class="alert danger-alert">
+                        Hey You have a Danger Alert Check it Out!!
+                    </div>
+                    <div class="alert warning-alert">
+                        Hey You have a Warning Alert Check it Out!!
+                    </div>
+                    <div class="alert info-alert">
+                        Hey You have a Info Alert Check it Out!!
+                    </div>
+
+                    <div class="code-container width-fit p-1rem">
+
+                        &lt;div class="alert primary-alert">
+                        Hey You have a Primary Alert Check it Out!!
+                        &lt;/div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="badge">
+                <h1>Badge</h1>
+                <div class="content-div width-fit m-1rem">
+                    <span><i class="fas fa-bell"></i></span>
+                    <button class="button badge-button">Notifications<span class="badge">10</span></button>
+
+                    <div class="badge-div">
+                        <img class="avatar large" src="./images/avatar.svg">
+                        <span class="status avatar-online"></span>
+                    </div>
+
+                    <div class="badge-div">
+                        <img class="avatar large" src="./images/avatar.svg">
+                        <span class="status avatar-away"></span>
+                    </div>
+
+                    <div class="code-container p-1rem">
+                        <pre>
+                            <code>
+                                &lt;div class="badge-div">
+                                  &lt;img class="avatar large" src="./images/avatar.svg">
+                                  &lt;span class="status avatar-away">&lt;/span>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="button">
+                <h1>Button</h1>
+                <div class="content-div width-fit m-1rem">
+                    <button class="button primary-button">Primary</button>
+                    <button class="button secondary-button">Secondary</button>
+                    <button class="button success-button">Success</button>
+                    <button class="button danger-button">Danger</button>
+                    <button class="button warning-button">Warning</button>
+                    <button class="button info-button">Info</button>
+
+                    <div class="code-container width-fit p-1rem">
+
+                        &lt;button class="button primary-button">Primary&lt;/button>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="card">
+                <h1>Card</h1>
+                <div class="content-div width-fit m-1rem">
+                    <h2>Profile Card</h2>
+                    <div class="profile-card m-1rem">
+                        <div class="card-name">
+                            <!-- <img class="profile-image" src="./images/avatar.svg"> -->
+                            <img class="avatar Xtralarge" src="./images/avatar.svg" />
+                            <div class="para">
+                                <p><b>Shashank Korthiwada</b></p>
+                                <p class="designation-para">Software Development Engineer</p>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p style="line-height: 1.5;">
+                                This is a sample description explaining about the individual and
+                                his skills and
+                                hobbies and his
+                                experience....</p>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+
+                    <h2>Product Card</h2>
+                    <div class="product-card-div m-1rem">
+                        <div class="product-image-div">
+                            <!-- style="width: 100%; display: block;" -->
+                            <img class="item-image"
+                                src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/12/2/0bf4c343-e45a-48b7-91fa-1c8dbfdd8d471575276332064-1.jpg">
+                            <span class="new-tag">New</span>
+                        </div>
+                        <div class="product-description-div">
+                            <p><b>English Navy</b></p>
+                            <p>Men Slim Fit Formal Shirt</p>
+                            <div><b>Rs.479</b><span
+                                    style="text-decoration: line-through; padding: 0.5rem;">Rs.999</span><span
+                                    style="color: orange;">(52% OFF)</span></div>
+                        </div>
+                    </div>
+
+                    <h2>Blog Card</h2>
+                    <div class="blog-card-div m-1rem">
+                        <div class="blog-image-div">
+                            <img class="blog-image" src="./images/cardImage.jpg">
+                        </div>
+                        <div class="blog-description-div">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, perferendis. Impedit
+                                ad
+                                eaque molestiae eveniet repudiandae doloribus accusantium. Culpa quos ad
+                                voluptatibus
+                                vel, fuga commodi at necessitatibus odit numquam possimus.</p>
+                            <button class="button primary-button">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="code-container p-1rem">
+                        <pre>
+                            <code>
+                                &lt;div class="blog-card-div">
+                                    &lt;div class="blog-image-div">
+                                        &lt;img class="blog-image" src="./images/cardImage.jpg">
+                                    &lt;/div>
+                                    &lt;div class="blog-description-div">
+                                        &lt;p>Image Description&lt;/p>
+                                        &lt;button class="button primary-button">Follow&lt;/button>
+                                    &lt;/div>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="image">
+                <h1>Image</h1>
+                <div class="content-div width-fit m-1rem">
+                    <h3>Simple Image</h3>
+                    <div class="image-div m-1rem">
+                        <img src="https://via.placeholder.com/150">
+                    </div>
+                    <h3>Image Link</h3>
+                    <div class="image-div m-1rem">
+                        <p>Click On the Image</p>
+                        <a href="https://google.com">
+                            <img style="width: 300px; height: auto;" src="./images/imageLink.png">
+                        </a>
+                    </div>
+                    <h3>Image With Rounded Corners</h3>
+                    <div class="image-div m-1rem">
+                        <img src="./images/squareImage.png" style="border-radius: 0.25rem;">
+                    </div>
+                    <h3>Circular Image</h3>
+                    <div class="image-div m-1rem">
+                        <img src="./images/squareImage.png" style="border-radius: 50%;">
+                    </div>
+
+                    <div class="code-container p-1rem">
+                        <pre>
+                            <code>
+                                &lt;div>
+                                    &lt;h3>Image With Rounded Corners&lt;/h3>
+                                    &lt;img src="./images/squareImage.png">
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="input">
+                <h1>Input</h1>
+                <div class="content-div width-fit m-1rem">
+                    <h3>Standard Input</h3>
+                    <div class="input-div m-1rem">
+                        <input type="text" class="input" placeholder="Enter Some Input">
+                    </div>
+
+                    <h3>Input Type Password</h3>
+                    <div class="input-div m-1rem">
+                        <input type="password" class="input" placeholder="Enter Password">
+                    </div>
+
+                    <h3>Input With Icons</h3>
+                    <div class="input-div m-1rem">
+                        <input type="text" class="input" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <div class="input-div m-1rem">
+                        <input type="text" class="input text-center" placeholder="Search Users">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="code-container p-1rem">
+                        &lt;input type="text" class="input" placeholder="Enter Some Input">
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="list">
+                <h1>List</h1>
+                <div class="content-div width-fit m-1rem">
+                    <h3>Group of Fruits</h3>
+                    <div>
+                        <ul>
+                            <li>Apples</li>
+                            <li>Oranges</li>
+                            <li>Grapes</li>
+                        </ul>
+                    </div>
+
+                    <h3>Group of Address</h3>
+                    <div>
+                        <div class="list-div">
+                            <i class="fas fa-users"></i>
+                            <div class="list-name">
+                                Coherent UI
+                            </div>
+                        </div>
+                        <div class="list-div">
+                            <i class="fas fa-map-marker"></i>
+                            <div class="list-name">
+                                Bangalore IN
+                            </div>
+                        </div>
+                        <div class="list-div">
+                            <i class="fas fa-envelope-open"></i>
+                            <div class="list-name">
+                                <a href="mailto:coherent-ui@gmail.com">coherent-ui@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="list-div">
+                            <i class="fas fa-link"></i>
+                            <div class="list-name">
+                                <a href="">coherent-ui.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="code-container p-1rem">
+                        <pre>
+                            <code>
+                                &lt;div>
+                                   &lt;ul>
+                                      &lt;li>Apples &lt;/li>
+                                      &lt;li>Oranges&lt;/li>
+                                      &lt;li>Grapes &lt;/li>
+                                   &lt;/ul>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="navigation">
+                <h1>Navigation</h1>
+                <div class="content-div m-1rem">
+                    <nav class="nav-section">
+                        <ul>
+                            <li class="list-item-inline"><a class="nav-section-link" href="#About">About</a></li>
+                            <li class="list-item-inline"><a class="nav-section-link" href="#Contact">Contact</a>
+                            </li>
+                            <li class="list-item-inline"><a class="nav-section-link" href="#Home">Home</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="code-container">
+                        <pre>
+                            <code>
+                                &lt;nav class="nav-section">
+                                    &lt;ul>
+                                        &lt;li class="list-item-inline">&lt;a href="#About">About&lt;/a>&lt;/li>
+                                        &lt;li class="list-item-inline">&lt;a href="#Contact">Contact&lt;/a>&lt;/li>
+                                        &lt;li class="list-item-inline">&lt;a href="#Home">Home&lt;/a>&lt;/li>
+                                    &lt;/ul>
+                                &lt;/nav>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="modal">
+                <h1>Modal</h1>
+                <div class="content-div width-fit m-1rem">
+                    <div class="modal-div">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolorem
+                        consequuntur
+                        eligendi deserunt quasi voluptas accusamus, quo magnam laborum perspiciatis necessitatibus
+                        sint
+                        nulla mollitia! A doloribus consequatur temporibus id quaerat!
+                        <button class="close-modal"> X </button>
+                    </div>
+
+                    <div class="code-container p-1rem">
+                        <pre>
+                            <code>
+                                &lt;div class="modal-div">
+                                    You Have New Notifications
+                                    &lt;button class="close-modal"> X &lt;/button>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row" id="rating">
+                <h1>Ratings</h1>
+                <div class="content-div width-fit m-1rem">
+                    <p>basic rating</p>
+                    <div class="m-1rem">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Heart</p>
+                    <div class="m-1rem">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+
+                    <div class="code-container p-1rem">
+                        <pre>
+                            <code>
+                                &lt;div>
+                                    &lt;i class="fas fa-star">&lt;/i>
+                                    &lt;i class="fas fa-star">&lt;/i>
+                                    &lt;i class="fas fa-star">&lt;/i>
+                                    &lt;i class="fas fa-star">&lt;/i>
+                                    &lt;i class="fas fa-star">&lt;/i>
+                                &lt;/div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="row">
+                <div class="footer-div">
+                    <div>
+                        Made By Shashank
+                    </div>
+                    <div>
+                        Find Me At:
+                        <a class="link" href="https://github.com/shashankorthiwada"><i class="fab fa-github"></i></a>
+                        <a class="link" href="https://in.linkedin.com/in/shashank-korthiwada-3800a18b"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a class="link" href="https://twitter.com/IamKorthiwada"><i class="fab fa-twitter"></i></a>
+                        <a class="link" href="https://angel.co/u/shashank-korthiwada"><i
+                                class="fab fa-angellist"></i></a>
+                        <a class="link" href="https://hashnode.com/@ShashanKorthiwada"><span class="iconify"
+                                data-icon="simple-icons:hashnode" data-inline="false"></span></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </section>
 </body>
 
 </html>
